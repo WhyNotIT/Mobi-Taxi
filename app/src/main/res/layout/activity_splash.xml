@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/root_layout"
+              android:orientation="vertical"
+              android:background="@color/colorPrimary"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center"
+              android:gravity="center">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:src="@drawable/logo_splash"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="center">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/loading_layout"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/splash_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text=""/>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:layout_margin="10dp"
+        android:visibility="visible"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:indicator="BallClipRotatePulse"
+        app:indicator_color="@color/colorPrimaryText"
+        />
+
+
+
+        </LinearLayout>
+
+
+
+<LinearLayout
+    android:visibility="gone"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/connect_layout"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Identification"/>
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Connexion"
+        android:id="@+id/connexion"
+        android:textColor="@color/white"
+        android:clickable="true"
+        android:textSize="15sp"
+        android:theme="@style/MyButton"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OU"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_margin="7dp"
+        android:textColor="@color/colorPrimaryText"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="S' enregistrer"
+        android:id="@+id/inscription"
+        android:textColor="@color/white"
+        android:clickable="true"
+        android:textSize="15sp"
+        android:theme="@style/MyButton"
+        />
+
+</LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+    </android.support.design.widget.CoordinatorLayout>

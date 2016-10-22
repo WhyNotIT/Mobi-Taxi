@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    android:id="@+id/root_layout"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryText"
+            android:text="Contact des taxis les plus proches en cours..."
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            android:layout_margin="10dp"/>
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/recherche_en_cours"
+            android:layout_margin="15dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:indicator="BallPulse"
+            app:indicator_color="@color/colorPrimaryText"
+            android:visibility="visible"
+            />
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/attente_de_reponse"
+            android:layout_margin="15dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:indicator="BallGridPulse"
+            app:indicator_color="@color/colorPrimaryText"
+            android:visibility="gone"
+            />
+
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

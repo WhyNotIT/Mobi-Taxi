@@ -1,0 +1,73 @@
+<resources>
+
+
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+
+    </style>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="FabStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/spacing_large</item>
+        <item name="borderWidth">0dp</item>
+        <item name="elevation">7dp</item>
+        <item name="pressedTranslationZ">12dp</item>
+        <item name="rippleColor">@color/white</item>
+    </style>
+
+    <style name="TutoButton" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="colorButtonNormal">@color/green_call</item>
+    </style>
+
+    <style name="MyButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="colorButtonNormal">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="button_call" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="colorButtonNormal">@color/green_call</item>
+    </style>
+
+
+    <style name="accepter_button" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/green_call</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="refuser_button" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="colorButtonNormal">@color/red_refuser</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="CircularProgress" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/soft_red</item>
+        <item name="colorControlActivated">@color/soft_red</item>
+    </style>
+
+
+    <style name="TaxistCardViewStyle" parent="Theme.AppCompat.Light">
+        <item name="cardCornerRadius">2dp</item>
+        <item name="cardElevation">4dp</item>
+       <!-- <item name="contentPaddingBottom">24dp</item>
+        <item name="contentPaddingTop">24dp</item>
+        <item name="contentPaddingLeft">16dp</item>
+        <item name="contentPaddingRight">16dp</item> -->
+        <item name="cardBackgroundColor">@color/white</item>
+    </style>
+
+</resources>
